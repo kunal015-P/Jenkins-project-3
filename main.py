@@ -6,7 +6,7 @@ class AppHandler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-type", "text/html")
         self.end_headers()
-        self.wfile.write(b"Hello from Kubernetes Python App 🚀")
+        self.wfile.write("Hello from Kubernetes Python App 🚀".encode())
 
 
 def run():
